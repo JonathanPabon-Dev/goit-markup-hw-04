@@ -8,6 +8,7 @@
   --icon-color-default: #afb1b8;
   --main-text-color: #212121;
   --main-bg-color: #2f303a;
+  --second-bg-color: #2f303acc;
   --third-bg-color: #f5f4fa;
   --border-color: #ececec;
   --main-text-ff: 'Roboto';
@@ -71,11 +72,6 @@ body {
 
 .contact-icon {
   margin-right: 10px;
-  fill: var(--second-text-color);
-}
-
-.contact-icon:hover {
-  fill: var(--highlighted-color);
 }
 
 .logo {
@@ -103,8 +99,17 @@ body {
   color: var(--second-text-color);
 }
 
-.link.active {
+.contact-icon {
+  fill: var(--second-text-color);
+}
+
+.link.active,
+.link.contact:hover {
   color: var(--highlighted-color);
+}
+
+.link.contact:hover .contact-icon {
+  fill: var(--highlighted-color);
 }
 
 .btn {
@@ -228,6 +233,36 @@ body {
   letter-spacing: 0.03em;
 }
 
+.service-item {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 370px;
+  height: 294px;
+}
+
+.service-item:nth-child(1) {
+  background-image: url(../images/logic.jpg);
+}
+
+.service-item:nth-child(2) {
+  background-image: url(../images/mobile-app.jpg);
+}
+
+.service-item:nth-child(3) {
+  background-image: url(../images/colours-palette.jpg);
+}
+
+.service-description {
+  padding: 27px 0;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--second-bg-color);
+}
+
 .team {
   background-color: var(--third-bg-color);
 }
@@ -276,14 +311,26 @@ body {
   width: 44px;
   height: 44px;
   background-color: var(--white);
-  color: var(--icon-color-default);
   border-radius: 50px;
 }
 
 .socialnetwork-link:hover,
 .fu-socialnetwork-link:hover {
   background-color: var(--highlighted-color);
-  color: var(--white);
+}
+
+.socialnetwork-icon {
+  width: 20px;
+  fill: var(--icon-color-default);
+}
+
+.socialnetwork-link:hover .socialnetwork-icon {
+  fill: var(--white);
+}
+
+.fu-socialnetwork-icon {
+  width: 20px;
+  fill: var(--white);
 }
 
 .client-item {
@@ -298,6 +345,15 @@ body {
 
 .client-item:hover {
   border-color: var(--highlighted-color);
+}
+
+.client-item:hover .client-icon {
+  fill: var(--highlighted-color);
+}
+
+.client-icon {
+  width: 106px;
+  fill: var(--icon-color-default);
 }
 
 .address {
@@ -359,8 +415,9 @@ body {
 .find-us {
   color: var(--white);
   font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   padding-bottom: 20px;
 }
 
