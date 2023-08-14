@@ -8,8 +8,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>WebStudio - Portfolio</title>
   </head>
   <body>
@@ -27,10 +25,20 @@
         </nav>
         <ul class="navbar-list list contacts">
           <li class="navbar-item">
-            <a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link contact" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-sobre"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="navbar-item">
-            <a class="link contact" href="tel:+525555296000">+52 55 5529 6000</a>
+            <a class="link contact" href="tel:+525555296000">
+              <svg class="contact-icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-celular"></use>
+              </svg>
+              +52 55 5529 6000
+            </a>
           </li>
         </ul>
       </div>
@@ -179,18 +187,53 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html">WebStudio</a>
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-item">Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
-            <li class="address-item">
-              <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+        <div class="footer-address">
+          <a class="logo" href="./index.html">WebStudio</a>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item">Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
+              <li class="address-item">
+                <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address-item">
+                <a class="address-link link" href="tel:+525555296000">+52 55 5529 6000</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-socialnetworks">
+          <h3 class="find-us">ENCUENTRENOS EN</h3>
+          <ul class="findus-socialnetwork-list list">
+            <li class="findus-socialnetwork-item">
+              <a class="fu-socialnetwork-link link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-item">
-              <a class="address-link link" href="tel:+525555296000">+52 55 5529 6000</a>
+            <li class="findus-socialnetwork-item">
+              <a class="fu-socialnetwork-link link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="findus-socialnetwork-item">
+              <a class="fu-socialnetwork-link link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="findus-socialnetwork-item">
+              <a class="fu-socialnetwork-link link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

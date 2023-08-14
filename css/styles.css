@@ -2,8 +2,10 @@
 
 :root {
   --white: #fff;
+  --white-o10: #ffffff1a;
   --highlighted-color: #2196f3;
   --second-text-color: #757575;
+  --icon-color-default: #afb1b8;
   --main-text-color: #212121;
   --main-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
@@ -67,8 +69,13 @@ body {
   gap: 50px;
 }
 
-.header .contacts .navbar-item:last-child {
-  margin-right: 0;
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--second-text-color);
+}
+
+.contact-icon:hover {
+  fill: var(--highlighted-color);
 }
 
 .logo {
@@ -91,6 +98,8 @@ body {
 }
 
 .link.contact {
+  display: flex;
+  align-items: center;
   color: var(--second-text-color);
 }
 
@@ -146,6 +155,11 @@ body {
 
 .hero {
   padding: 200px 0;
+  background-image: linear-gradient(rgba(47 48 58 / 0.4), rgba(47 48 58 / 0.4)),
+    url(../images/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero .container {
@@ -171,7 +185,8 @@ body {
 }
 
 .targets-list,
-.services-list {
+.services-list,
+.clients-list {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -179,6 +194,13 @@ body {
 
 .target-item {
   width: 270px;
+}
+
+.target-icon {
+  padding: 25px 100px;
+  background-color: var(--third-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .target-title {
@@ -196,7 +218,8 @@ body {
 }
 
 .services-title,
-.team-title {
+.team-title,
+.clients-title {
   margin: 0 0 50px 0;
   text-align: center;
   font-size: 36px;
@@ -205,9 +228,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+.team {
+  background-color: var(--third-bg-color);
+}
+
 .team-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 
 .team-member {
@@ -219,7 +247,7 @@ body {
 }
 
 .member-name {
-  margin: 30px 0 10px;
+  margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.17;
@@ -227,30 +255,68 @@ body {
 }
 
 .member-job {
-  margin: 10px 0 30px;
+  margin: 10px 0 16px;
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
+.member-socialnetwork-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.socialnetwork-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  color: var(--icon-color-default);
+  border-radius: 50px;
+}
+
+.socialnetwork-link:hover,
+.fu-socialnetwork-link:hover {
+  background-color: var(--highlighted-color);
+  color: var(--white);
+}
+
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 81px;
+  border: 1px solid var(--icon-color-default);
+  border-radius: 4px;
+}
+
+.client-item:hover {
+  border-color: var(--highlighted-color);
+}
+
 .address {
+  margin-top: 6px;
   font-style: normal;
 }
 
 .address-list {
   width: 231px;
-  margin-top: 9px;
+  row-gap: 9px;
 }
 
 .address-item {
-  margin: 2px 0;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--white);
 }
 
 .address-link {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgb(255 255 255 / 0.6);
 }
 
@@ -277,12 +343,41 @@ body {
   background-color: var(--main-bg-color);
 }
 
-.footer {
+.footer .container {
+  display: flex;
+  column-gap: 70px;
+}
+
+.footer-address {
   padding: 60px 0;
 }
 
-.team {
-  background-color: var(--third-bg-color);
+.footer-socialnetworks {
+  padding-top: 72px;
+}
+
+.find-us {
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03;
+  padding-bottom: 20px;
+}
+
+.findus-socialnetwork-list {
+  display: flex;
+  gap: 10px;
+}
+
+.fu-socialnetwork-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-o10);
+  color: var(--white);
+  border-radius: 50px;
 }
 
 .portfolio-list {

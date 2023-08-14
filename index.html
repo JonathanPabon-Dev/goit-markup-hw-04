@@ -8,8 +8,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>WebStudio - Home</title>
   </head>
   <body>
@@ -25,10 +23,20 @@
         </nav>
         <ul class="navbar-list list contacts">
           <li class="navbar-item">
-            <a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link contact" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-sobre"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="navbar-item">
-            <a class="link contact" href="tel:+525555296000">+52 55 5529 6000</a>
+            <a class="link contact" href="tel:+525555296000">
+              <svg class="contact-icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-celular"></use>
+              </svg>
+              +52 55 5529 6000
+            </a>
           </li>
         </ul>
       </div>
@@ -43,6 +51,11 @@
       <section class="targets section">
         <ul class="targets-list list container">
           <li class="target-item">
+            <div class="target-icon">
+              <svg width="70px" height="70px">
+                <use href="./images/icons.svg#icon-antena"></use>
+              </svg>
+            </div>
             <h3 class="target-title">ATENCIÓN A LOS DETALLES</h3>
             <p class="target-description">
               Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar
@@ -50,6 +63,11 @@
             </p>
           </li>
           <li class="target-item">
+            <div class="target-icon">
+              <svg width="70px" height="70px">
+                <use href="./images/icons.svg#icon-reloj"></use>
+              </svg>
+            </div>
             <h3 class="target-title">PUNTUALIDAD</h3>
             <p class="target-description">
               Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
@@ -57,6 +75,11 @@
             </p>
           </li>
           <li class="target-item">
+            <div class="target-icon">
+              <svg width="70px" height="70px">
+                <use href="./images/icons.svg#icon-planeacion"></use>
+              </svg>
+            </div>
             <h3 class="target-title">PLANIFICACIÓN</h3>
             <p class="target-description">
               Usted podrá observar y participar en cada fase del desarrollo y aplicación de
@@ -64,6 +87,11 @@
             </p>
           </li>
           <li class="target-item">
+            <div class="target-icon">
+              <svg width="70px" height="70px">
+                <use href="./images/icons.svg#icon-astronauta"></use>
+              </svg>
+            </div>
             <h3 class="target-title">TECNOLOGÍA MODERNA</h3>
             <p class="target-description">
               Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de
@@ -102,6 +130,36 @@
               />
               <h3 class="member-name">Andrés Cubo</h3>
               <p class="member-job">Diseñador de Productos</p>
+              <ul class="member-socialnetwork-list list">
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-member">
               <img
@@ -113,6 +171,36 @@
               />
               <h3 class="member-name">Carla Palacios</h3>
               <p class="member-job">Desarrolladora Frontend</p>
+              <ul class="member-socialnetwork-list list">
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-member">
               <img
@@ -124,6 +212,36 @@
               />
               <h3 class="member-name">Mario Dorado</h3>
               <p class="member-job">Marketing</p>
+              <ul class="member-socialnetwork-list list">
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-member">
               <img
@@ -135,6 +253,73 @@
               />
               <h3 class="member-name">Pablo Mijangos</h3>
               <p class="member-job">Diseñador IU</p>
+              <ul class="member-socialnetwork-list list">
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="member-socialnetwork-item">
+                  <a class="socialnetwork-link link" href="#">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients section">
+        <div class="container">
+          <h2 class="clients-title">Clientes Regulares</h2>
+          <ul class="clients-list list">
+            <li class="client-item">
+              <svg width="41px" height="47px">
+                <use href="./images/icons.svg#icon-yaco-c1"></use>
+              </svg>
+            </li>
+            <li class="client-item">
+              <svg width="40px" height="52px">
+                <use href="./images/icons.svg#icon-company-c2"></use>
+              </svg>
+            </li>
+            <li class="client-item">
+              <svg width="44px" height="42px">
+                <use href="./images/icons.svg#icon-company-c3"></use>
+              </svg>
+            </li>
+            <li class="client-item">
+              <svg width="85px" height="41px">
+                <use href="./images/icons.svg#icon-foster-peters-c4"></use>
+              </svg>
+            </li>
+            <li class="client-item">
+              <svg width="63px" height="46px">
+                <use href="./images/icons.svg#icon-brand-c5"></use>
+              </svg>
+            </li>
+            <li class="client-item">
+              <svg width="94px" height="44px">
+                <use href="./images/icons.svg#icon-company-tagline-c6"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -142,18 +327,53 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html">WebStudio</a>
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-item">Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
-            <li class="address-item">
-              <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+        <div class="footer-address">
+          <a class="logo" href="./index.html">WebStudio</a>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item">Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
+              <li class="address-item">
+                <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address-item">
+                <a class="address-link link" href="tel:+525555296000">+52 55 5529 6000</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-socialnetworks">
+          <h3 class="find-us">ENCUENTRENOS EN</h3>
+          <ul class="findus-socialnetwork-list list">
+            <li class="findus-socialnetwork-item">
+              <a class="fu-socialnetwork-link link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-item">
-              <a class="address-link link" href="tel:+525555296000">+52 55 5529 6000</a>
+            <li class="findus-socialnetwork-item">
+              <a class="fu-socialnetwork-link link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="findus-socialnetwork-item">
+              <a class="fu-socialnetwork-link link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="findus-socialnetwork-item">
+              <a class="fu-socialnetwork-link link" href="#">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
