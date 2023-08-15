@@ -113,7 +113,6 @@ body {
 }
 
 .btn {
-  font-size: 16px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -283,7 +282,6 @@ body {
 
 .member-name {
   margin-top: 30px;
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -291,7 +289,6 @@ body {
 
 .member-job {
   margin: 10px 0 16px;
-  font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
@@ -331,7 +328,7 @@ body {
   fill: currentColor;
 }
 
-.client-item {
+.client-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,7 +339,7 @@ body {
   border-radius: 4px;
 }
 
-.client-item:hover {
+.client-link:hover {
   color: var(--highlighted-color);
   border-color: var(--highlighted-color);
 }
@@ -385,7 +382,6 @@ body {
 }
 
 .card-category {
-  font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
 }
